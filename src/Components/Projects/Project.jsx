@@ -2,27 +2,34 @@ import React from 'react'
 import './Project.css'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import memeImg from '../../assets/skills/meme.png'
+import archeryImg from '../../assets/skills/archery.png'
+import portImg from '../../assets/skills/port.png'
+import drImg from '../../assets/skills/dr.jpg'
+import hmsImg from '../../assets/skills/hms.png'
+import musicImg from '../../assets/skills/music.png'
+
 
 const smallProjects = [
   {
     title: 'Memes app',
     description: 'Its a simple memes application where you get a n number of memes which helps to relax and have fun',
     tech: ['React', 'API'],
-    image: '../src/assets/skills/meme.png',
+    image: memeImg,
     demo: 'https://659a7ec3d5ec3e76dec89d7e--imaginative-cat-0ba4c6.netlify.app',
   },
   {
     title: 'Archery Game',
     description: 'Its a aim game to check your AIM',
     tech: ['JavaScript', 'HTML/CSS'],
-    image: '../src/assets/skills/archery.png',
+    image: archeryImg,
     demo: 'https://hareesh061.github.io/ARCHERY-GAME',
   },
   {
     title: 'Portfolio V1',
     description: 'My very first developer portfolio!',
     tech: ['HTML', 'Tailwind CSS', 'JS','React', 'Bootstrap'],
-    image: '../src/assets/skills/port.png',
+    image:  portImg,
     demo: 'https://65d4746f927c9bb35022283a--candid-frangollo-d21c96.netlify.app',
   },
 ]
@@ -33,7 +40,7 @@ const projects = [
     title: 'Diabetic Retinopathy Detection',
     description: 'Used CNN with Keras to classify retinal images and detect stages of diabetic retinopathy.',
     tech: ['Python', 'Keras', 'Deep Learning'],
-    image: '../src/assets/skills/dr.jpg',
+    image: drImg,
     github: 'https://github.com/Hareesh061/Diabetic_Retina',
   
   },
@@ -41,7 +48,7 @@ const projects = [
     title: 'Hospital Management System',
     description: 'Full-stack web app for managing hospital operations, patient records, and doctor scheduling.',
     tech: ['PHP', 'MySQL', 'HTML/CSS', 'Bootstrap'],
-    image: '../src/assets/skills/hms.png',
+    image: hmsImg,
     github: 'https://github.com/Hareesh061/Hospital-Management-Database-System',
   
   },
@@ -49,7 +56,7 @@ const projects = [
     title: 'Musio.co',
     description: 'Its a music application where the info is fetched from APIs',
     tech: ['HTML', 'CSS', 'JS', 'React','AWS'],
-    image: '../src/assets/skills/music.png',
+    image: musicImg,
     github: 'https://github.com/Hareesh061/Musio_app',
     
   },
