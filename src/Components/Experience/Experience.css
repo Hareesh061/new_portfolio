@@ -1,0 +1,148 @@
+.experience-container {
+    padding: 2rem;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .dark .experience-container{
+    background-color: #0f0e0e;
+  }
+
+  .dark .experience-content{
+    color: black;
+  }
+  
+  
+  .experience-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3%;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #090808;
+  }
+
+  .dark .experience-title{
+    color: white;
+  }
+  
+  .experience-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .experience-timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #ccc;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .experience-item {
+    position: relative;
+    width: 50%;
+    padding: 1rem 2rem;
+  }
+  
+  .experience-item.left {
+    left: 0;
+    text-align: right;
+  }
+  
+  .experience-item.right {
+    left: 50%;
+    text-align: left;
+  }
+  
+  .experience-content {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .experience-date {
+    position: absolute;
+    top: 10px;
+    font-size: 0.85rem;
+    color: #5ba1e2;
+    font-weight: 500;
+    width: 130px;
+  }
+  
+  .experience-item.left .experience-date {
+    right: -160px;
+    text-align: right;
+  }
+  
+  .experience-item.right .experience-date {
+    left: -160px;
+  }
+  
+  .experience-icon {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 3px solid #888;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: experience-pulse 2s infinite;
+  }
+  
+  @keyframes experience-pulse {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(100, 100, 255, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 0 10px rgba(100, 100, 255, 0);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .experience-timeline::after {
+      left: 20px;
+    }
+  
+    .experience-item {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 20px;
+      margin-bottom: 2rem;
+    }
+  
+    .experience-item.left,
+    .experience-item.right {
+      left: 0;
+      text-align: left;
+    }
+  
+    .experience-date {
+      left: 70px;
+      top: auto;
+      bottom: -20px;
+    }
+  
+    .experience-icon {
+      left: 20px;
+    }
+  }
+  

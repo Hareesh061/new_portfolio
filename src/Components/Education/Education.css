@@ -1,0 +1,98 @@
+.education-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .dark .edu{
+    color: white;
+  }
+  .education-section h3 {
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+  .dark .education-section{
+    background-color: #0b0909;
+  }
+  
+  .timeline-wrapper {
+    position: relative;
+    max-width: 800px;
+    color: black;
+    margin: auto;
+    padding-left: 40px;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    left: 18px;
+    top: 0;
+    width: 4px;
+    background: #007bff;
+    z-index: 0;
+    height: 0; /* default height will animate */
+  }
+  
+  .timeline-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 20px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .timeline-content {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .timeline-content h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .timeline-content h5 {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .timeline-content span {
+    font-size: 0.9rem;
+    color: #0c0c0c;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #0a0101;
+  }
+
+  .timeline-content:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #007bff;
+  }
+  
